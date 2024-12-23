@@ -21,7 +21,7 @@ import java.util.Optional;
 
 
 @SpringBootTest
-//@TestMethodOrder(OrderAnnotation.class)
+@TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
 class UserServiceImplMock { 
     @Mock
