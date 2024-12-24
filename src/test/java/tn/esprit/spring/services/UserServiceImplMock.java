@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@SpringBootTest
+//@SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
 class UserServiceImplMock { 
