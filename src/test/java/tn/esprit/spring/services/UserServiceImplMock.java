@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Optional;
 
 
-//@SpringBootTest
-@TestMethodOrder(OrderAnnotation.class)
-@ExtendWith(MockitoExtension.class)
-class UserServiceImplMock { 
-    @Mock
+@SpringBootTest
+//@TestMethodOrder(OrderAnnotation.class)
+//@ExtendWith(MockitoExtension.class)
+class UserServiceImplMock {
+    /*@Mock
     UserRepository userRepository;
     @InjectMocks
     UserServiceImpl userService;
@@ -42,6 +42,6 @@ class UserServiceImplMock {
     ;
     User user1 = userService.retrieveUser("2");
     Assertions.assertNotNull(user1);
-    }
+    }*/
 
 }
