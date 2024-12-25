@@ -21,9 +21,9 @@ import java.util.Optional;
 
 
 //@SpringBootTest
-@TestMethodOrder(OrderAnnotation.class)
+//@TestMethodOrder(OrderAnnotation.class)
 @ExtendWith(MockitoExtension.class)
-class UserServiceImplMock {
+ class UserServiceImplMock {
     @Mock
     UserRepository userRepository;
     @InjectMocks
@@ -37,7 +37,7 @@ class UserServiceImplMock {
     };
 
     @Test
-    public void testRetrieveUser() {
+     void testRetrieveUser() {
     Mockito.when(userRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(user))
     ;
     User user1 = userService.retrieveUser("2");
