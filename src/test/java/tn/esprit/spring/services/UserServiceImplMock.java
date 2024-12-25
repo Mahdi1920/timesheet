@@ -40,7 +40,7 @@ class UserServiceImplMock {
 	public void testRetrieveUser() {
 		Mockito.when(userRepository.findById(Mockito.anyLong())).thenReturn(Optional.of(user))
 		;
-		User user1 = userService.retrieveUser("2");
+		User user1 = userService.retrieveUser("1");
 		Assertions.assertNotNull(user1);
 	}
 
